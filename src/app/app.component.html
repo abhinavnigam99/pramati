@@ -1,0 +1,25 @@
+<div class="addBorder minWidth">
+  <div class="addFlex makeCenter margin20">
+    <img [src]="selected.avatar_url" width="200px" height="200px" />
+  </div>
+  <div class="addBorder margin20 addFlex">
+    <mat-icon *ngIf="!reachedFirst" (click)="previous()"
+      >keyboard_arrow_left</mat-icon
+    >
+    <div
+      *ngFor="let item of showItems"
+      class="addFlex padding20 addBorder card margin20"
+      (click)="selectedItem(item)"
+    >
+      <img [src]="item.avatar_url" width="50px" height="50px" />
+      <div class="padding20">
+        Login: <span>{{ item.login }}</span>
+        <br />
+        User:<span>{{ item.type }}</span>
+      </div>
+    </div>
+    <mat-icon *ngIf="!reachedLast" (click)="next()"
+      >keyboard_arrow_right</mat-icon
+    >
+  </div>
+</div>

@@ -1,0 +1,34 @@
+.addFlex {
+  display: flex;
+}
+
+.makeCenter {
+  justify-content: center;
+}
+
+.addBorder {
+  border: 1px solid black;
+}
+
+.margin20 {
+  margin: 20px;
+}
+
+.padding20 {
+  padding: 20px;
+}
+
+.card {
+  width: 33%;
+  img {
+    align-self: center;
+  }
+}
+
+mat-icon {
+  align-self: center;
+}
+
+.minWidth {
+  min-width: fit-content;
+}
